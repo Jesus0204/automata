@@ -46,7 +46,7 @@ All of these rules and the knowledge base are found in the file ```elvish.pl```.
 
 ## Test
 To run the program, first open ```elvish.pl``` in Prolog or a prolog terminal.  
-Below are several tests to test the program and see if a certain word is found in the language:
+Below are several tests to see if a certain word is found in the language defined above:
 1. ```go_over_automaton([t, e, n, g, w, a]).```
 2. ```go_over_automaton([t, e, n, g, w, e]).```
 3. ```go_over_automaton([h, e, l, l, o]).```
