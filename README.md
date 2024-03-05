@@ -36,7 +36,7 @@ move(initial_state, next_state, symbol).
 
 There is also an additional rule which is the accepted state. My automaton only has one accepted state, so if it had several there would be several instances of this rule. 
 
-```
+```prolog
 accepting_state(z).
 ```
 
