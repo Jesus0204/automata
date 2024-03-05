@@ -23,6 +23,10 @@ Any other character not in the alphabet, and not explicitly in the automaton (wi
 Here is the automaton that I designed: 
 ![Automata Elvish](https://github.com/Jesus0204/automata/assets/65917649/10d7da60-1f07-424a-a12a-ee8363f18f0d)
 
+The automaton is also equivalent to the following regular expression
+
+$ (^T)((hali (as|n))|(inco)|(engwa)|(uilë))$
+
 ## Implementation
 
 ## Test
