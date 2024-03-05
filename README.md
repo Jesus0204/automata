@@ -14,9 +14,14 @@ The words that I chose to model are specifically these 5 words:
 I decided to use a *DFA* since my endgame is to only accept these five words as valid and no others, and it is quite easier to implement and ensure that no other words are accepted.
 
 ## Models
-I only decided to generate one automaton for this language, since there is no need to generate another with the following solution. It is important to mention that the automaton is only valid for the following alphabet: 
+I only decided to generate one automaton for this language, since the following automaton represents the five words in the language. It is important to mention that the automaton is only valid for the following alphabet: 
 
 $\sum_{} = {a, c, e, ë, g, h, i, l, n, o, s, T, u, w}$
+
+Any other character not in the alphabet, and not explicitly in the automaton (within an arc) is not accepted.
+
+Here is the automaton that I designed: 
+
 
 ## Implementation
 
