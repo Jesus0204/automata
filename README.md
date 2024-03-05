@@ -40,6 +40,10 @@ There is also an additional rule which is the accepted state. My automaton only 
 accepting_state(z).
 ```
 
+The rest of the code has a helper rule which calls the recursive rule called ```go_over_automaton(ListtoCheck)``` as well as the base rule ```automatonCheck([], InitialState)``` and the recursive rule ```automatonCheck([Symbol | RestofList], InitialState)```.
+
+All of these rules and the knowledge base are found in the file ```elvish.pl```.
+
 ## Test
 
 ## Analysis
