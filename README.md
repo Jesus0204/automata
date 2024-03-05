@@ -23,3 +23,4 @@ I decided to use a *DFA* since my endgame is to only accept these five words as 
 
 ## References
 LOTR Fandom. (n.d.). Elvish word list. https://lotr.fandom.com/wiki/Elvish_word_list
+Wikipedia. (Januart 19, 2024). Quenya. https://en.wikipedia.org/wiki/Quenya
