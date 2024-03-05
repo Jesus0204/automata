@@ -28,6 +28,17 @@ The automaton is also equivalent to the following regular expression
 (^ $T)((hali (as|n))|(inco)|(engwa)|(uilë))$
 
 ## Implementation
+For me to implement my lexical analysis I used the automaton to create a Knowledge base in Prolog. The knowledge base has the initial state, the next state, and the symbol that moves from one state to the other. This is modeled in the following way: 
+
+```
+move(initial_state, next_state, symbol).
+```
+
+There is also an additional rule which is the accepted state. My automaton only has one accepted state, so if it had several there would be several instances of this rule. 
+
+```
+accepting_state(z).
+```
 
 ## Test
 
