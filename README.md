@@ -21,7 +21,7 @@ $\sum_{} = {a, c, e, ë, g, h, i, l, n, o, s, T, u, w}$
 Any other character not in the alphabet, and not explicitly in the automaton (within an arc) is not accepted.
 
 Here is the automaton that I designed: 
-![Automata Elvish](https://github.com/Jesus0204/automata/assets/65917649/10d7da60-1f07-424a-a12a-ee8363f18f0d)
+![Automata Elvish](https://github.com/Jesus0204/automata/blob/main/Automata%20Elvish.png)
 
 The automaton is also equivalent to the following regular expression
 
