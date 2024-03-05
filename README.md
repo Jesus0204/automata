@@ -58,6 +58,8 @@ Below are several tests to test the program and see if a certain word is found i
 9. ```go_over_automaton([t, u, i, l, e]).```
 10. ```go_over_automaton([t, h, a, l, e]).```
 
+The tests are also found in the file ```elvish_test.pl```.
+
 ## Analysis
 
 ## References
