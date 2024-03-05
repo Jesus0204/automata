@@ -42,9 +42,21 @@ accepting_state(z).
 
 The rest of the code has a helper rule which calls the recursive rule called ```go_over_automaton(ListtoCheck)``` as well as the base rule ```automatonCheck([], InitialState)``` and the recursive rule ```automatonCheck([Symbol | RestofList], InitialState)```.
 
-All of these rules and the knowledge base are found in the file ```elvish.pl```.
+All of these rules and the knowledge base are found in the file ```elvish.pl```. If the word is in the language it returns true otherwise, it returns false.
 
 ## Test
+To run the program, first open ```elvish.pl``` in Prolog or a prolog terminal.  
+Below are several tests to test the program and see if a certain word is found in the language:
+1. ```go_over_automaton([t, e, n, g, w, a]).```
+2. ```go_over_automaton([t, e, n, g, w, e]).```
+3. ```go_over_automaton([h, e, l, l, o]).```
+4. ```go_over_automaton([t, i, n, c, o]).```
+5. ```go_over_automaton([t, h, a, l, i, n]).```
+6. ```go_over_automaton([t, h, a, l, i, a, s]).```
+7. ```go_over_automaton([t, h, a, l, i, a, n]).```
+8. ```go_over_automaton([t, u, i, l, ë]).```
+9. ```go_over_automaton([t, u, i, l, e]).```
+10. ```go_over_automaton([t, h, a, l, e]).```
 
 ## Analysis
 
