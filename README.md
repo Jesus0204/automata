@@ -29,18 +29,29 @@ The automaton is also equivalent to the following regular expression
 
 ## Implementation
 For me to implement my lexical analysis I used the automaton to create a Knowledge base in Prolog. The knowledge base has the initial state, the next state, and the symbol that moves from one state to the other. This is modeled in the following way: 
-
 ```prolog
 move(initial_state, next_state, symbol).
 ```
 
-There is also an additional rule which is the accepted state. My automaton only has one accepted state, so if it had several there would be several instances of this rule. 
-
+There is also an additional rule which is the accepted state. My automaton only has one accepted state, so if it had several there would be several instances of this rule: 
 ```prolog
 accepting_state(z).
 ```
 
-The rest of the code has a helper rule which calls the recursive rule called ```go_over_automaton(ListtoCheck)``` as well as the base rule ```automatonCheck([], InitialState)``` and the recursive rule ```automatonCheck([Symbol | RestofList], InitialState)```.
+The rest of the code has a helper rule which calls the recursive rule: 
+```prolog
+go_over_automaton(ListtoCheck)
+```
+
+as well as the base rule:
+```prolog
+automatonCheck([], InitialState)
+```
+
+and the recursive rule:
+```prolog
+automatonCheck([Symbol | RestofList], InitialState)
+```
 
 All of these rules and the knowledge base are found in the file ```elvish.pl```. If the word is in the language it returns true otherwise, it returns false.
 
