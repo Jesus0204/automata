@@ -23,3 +23,18 @@ move(q, z, ë).
 
 % Accepting state
 accepting_state(z).
+
+go_over_automaton(ListtoCheck) :-
+    % Call the other function, with the first state in the automaton which is A
+    automatonCheck(ListtoCheck, a).
+
+% Base case where the entire list has been seen. Check if it is an accepted state
+automatonCheck([], InitialState) :-
+    accepting_state(InitialState).
+
+% If the list still has elements to go through
+automatonCheck([Symbol | RestofList], InitialState) :-
+    % Check if the Initial state and the symbol are connected in knowledge base
+    move(InitialState, NextState, Symbol),
+    % If they are then call the function again until base case
+    automatonCheck(RestofList, NextState).
