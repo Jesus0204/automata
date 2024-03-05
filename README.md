@@ -16,7 +16,7 @@ I decided to use a *DFA* since my endgame is to only accept these five words as 
 ## Models
 I only decided to generate one automaton for this language, since there is no need to generate another with the following solution. It is important to mention that the automaton is only valid for the following alphabet: 
 
-$\sum{}
+\sum_{k=1}^n
 
 ## Implementation
 
