@@ -38,19 +38,19 @@ There is also an additional rule which is the accepted state. My automaton only 
 accepting_state(z).
 ```
 
-The rest of the code has a helper rule which calls the recursive rule: 
+The rest of the code has a helper rule which calls the recursive rule, 
 ```prolog
-go_over_automaton(ListtoCheck)
+go_over_automaton(ListtoCheck) :-
 ```
 
-as well as the base rule:
+as well as the base rule,
 ```prolog
-automatonCheck([], InitialState)
+automatonCheck([], InitialState) :-
 ```
 
 and the recursive rule:
 ```prolog
-automatonCheck([Symbol | RestofList], InitialState)
+automatonCheck([Symbol | RestofList], InitialState) :-
 ```
 
 All of these rules and the knowledge base are found in the file ```elvish.pl```. If the word is in the language it returns true otherwise, it returns false.
