@@ -25,7 +25,7 @@ Here is the automaton that I designed:
 
 The automaton is also equivalent to the following regular expression
 
-(^$T)((hali (as|n))|(inco)|(engwa)|(uilë))$
+(^ $T)((hali (as|n))|(inco)|(engwa)|(uilë))$
 
 ## Implementation
 
