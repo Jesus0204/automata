@@ -72,6 +72,7 @@ Below are several tests to see if a certain word is found in the language define
 The tests are also found in the file ```elvish.pl```.
 
 ## Analysis
+Since the program uses recursion and iterates over the knowledge base (by checking each fact once) it assimilates a for a loop. The base case of the recursion is reached when the list in the program is empty, and no additional operation is performed, so it is safe to say that the program has an asymptotic time of O(n). Using a different approach would also have the same time. For example, if a NFA is used, the knowledge base would grow, but the recursion would remain the same, so there is no big difference in that aspect. 
 
 ## References
 LOTR Fandom. (n.d.). Elvish word list. https://lotr.fandom.com/wiki/Elvish_word_list
