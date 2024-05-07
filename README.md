@@ -56,7 +56,7 @@ automatonCheck([Symbol | RestofList], InitialState) :-
 All of these rules and the knowledge base are found in the file ```elvish.pl```. If the word is in the language it returns true otherwise, it returns false.
 
 ## Test
-To run the program, first open ```elvish.pl``` in Prolog or a prolog terminal. To open the file, you must run [route to the file/elvish.pl].
+To run the program, first open ```elvish.pl``` in Prolog or a prolog terminal. To open the file, you must run ["route to the file/elvish.pl"].
 
 ### Successful tests
 Below are several tests which should return true, since they are the words that were defined in the automaton and the language:
@@ -74,7 +74,11 @@ Below are other words which are very similar to the words in the language, but w
 4. ```tuile.```
 5. ```thale.```
 
-The tests themselves have the expected result and the result that Prolog gives. It is important to mention that these functions underneath have something similar to this command: ```go_over_automaton([t, e, n, g, w, a]).```. This means that if you want to run a word different from the above words, run ```go_over_automaton([word]).``` where **word** is the word put in letters, and each letter is separated with a comma. 
+The tests themselves have the expected result and the result that Prolog gives. It is important to mention that these functions underneath have something similar to this command: ```go_over_automaton([t, e, n, g, w, a]).```. This means that if you want to run a word different from the above words, run ```go_over_automaton([word-to-check]).``` where **word-to-check** is the word put in letters, and each letter is separated with a comma. 
+
+Example: 
+To test the word **computer**, you need to run the following command: 
+ ```go_over_automaton([c, o, m, p, u, t, e, r]).```
 
 ## Analysis
 Since the program uses recursion and iterates over the knowledge base (by checking each fact once) it assimilates a for a loop. The base case of the recursion is reached when the list in the program is empty, and no additional operation is performed, so it is safe to say that the program has an asymptotic time of O(n). Using a different approach would also have the same time. For example, if a NFA is used, the knowledge base would grow, but the recursion would remain the same, so there is no big difference in that aspect. 
