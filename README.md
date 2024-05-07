@@ -11,7 +11,9 @@ The words that I chose to model are specifically these 5 words:
 4. Thalias - Bravery
 5. Thalin - Dauntless
 
-I decided to use a *DFA* since my endgame is to only accept these five words as valid and no others, and it is quite easier to implement and ensure that no other words are accepted.
+Now according to Geeks for Geeks (2023), a Finite Automaton is the simplest way to recognize patterns, and there are two types of automaton, which are DFA and NFA. A DFA, also known as Deterministic Finite Automata, can only go to one state for a particular input. This means for example, that if the input is the letter n, there is only a single state to go to for the letter n. On the other hand, a Nondeterministic Finite Automata has two key differences. The first is that Null inputs are accepted, as well that a single input can lead to different states. If the same letter n is given as input, then several states could be followed. 
+
+Taking all of this into account, I decided to use a *DFA* since my endgame is to only accept these five words as valid and no others. A single path for each of the words can be followed, and there is no need to implement an NFA. A DFA is often easier to implement, and it suits the language and case that I am analyzing, which is why the DFA was chosen. 
 
 ## Models
 I only decided to generate one automaton for this language, since the following automaton represents the five words in the language. It is important to mention that the automaton is only valid for the following alphabet: 
@@ -84,6 +86,8 @@ To test the word **computer**, you need to run the following command:
 Since the program uses recursion and iterates over the knowledge base (by checking each fact once) it assimilates a for a loop. The base case of the recursion is reached when the list in the program is empty, and no additional operation is performed, so it is safe to say that the program has an asymptotic time of O(n). Using a different approach would also have the same time. For example, if a NFA is used, the knowledge base would grow, but the recursion would remain the same, so there is no big difference in that aspect. 
 
 ## References
+Geeks for Geeks. (June 27, 2023). Introduction of Finite Automata. https://www.geeksforgeeks.org/introduction-of-finite-automata/
+
 LOTR Fandom. (n.d.). Elvish word list. https://lotr.fandom.com/wiki/Elvish_word_list
 
 Wikipedia. (January 19, 2024). Quenya. https://en.wikipedia.org/wiki/Quenya
