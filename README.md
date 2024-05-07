@@ -56,18 +56,23 @@ automatonCheck([Symbol | RestofList], InitialState) :-
 All of these rules and the knowledge base are found in the file ```elvish.pl```. If the word is in the language it returns true otherwise, it returns false.
 
 ## Test
-To run the program, first open ```elvish.pl``` in Prolog or a prolog terminal.  
-Below are several tests to see if a certain word is found in the language defined above:
+To run the program, first open ```elvish.pl``` in Prolog or a prolog terminal. To open the file, you must run [route to the file/elvish.pl].
+
+### Successful tests
+Below are several tests which should return true, since they are the words that were defined in the automaton and the language:
 1. ```go_over_automaton([t, e, n, g, w, a]).```
-2. ```go_over_automaton([t, e, n, g, w, e]).```
-3. ```go_over_automaton([h, e, l, l, o]).```
-4. ```go_over_automaton([t, i, n, c, o]).```
+2. ```go_over_automaton([t, i, n, c, o]).```
+3. ```go_over_automaton([t, u, i, l, ë]).```
+4. ```go_over_automaton([t, h, a, l, i, a, s]).```
 5. ```go_over_automaton([t, h, a, l, i, n]).```
-6. ```go_over_automaton([t, h, a, l, i, a, s]).```
-7. ```go_over_automaton([t, h, a, l, i, a, n]).```
-8. ```go_over_automaton([t, u, i, l, ë]).```
-9. ```go_over_automaton([t, u, i, l, e]).```
-10. ```go_over_automaton([t, h, a, l, e]).```
+
+### Unsuccessful tests
+Below are other words which are very similar to the words in the language, but which are not in the language. If the words are run, prolog will return false:
+1. ```go_over_automaton([t, e, n, g, w, e]).```
+2. ```go_over_automaton([h, e, l, l, o]).```
+3. ```go_over_automaton([t, h, a, l, i, a, n]).```
+4. ```go_over_automaton([t, u, i, l, e]).```
+5. ```go_over_automaton([t, h, a, l, e]).```
 
 The tests are also found in the file ```elvish.pl```.
 
