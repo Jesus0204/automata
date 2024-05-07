@@ -39,14 +39,52 @@ automatonCheck([Symbol | RestofList], InitialState) :-
     % If they are then call the function again until base case
     automatonCheck(RestofList, NextState).
 
-% Tests that can be run
-go_over_automaton([t, e, n, g, w, a]).
-go_over_automaton([t, e, n, g, w, e]).
-go_over_automaton([h, e, l, l, o]).
-go_over_automaton([t, i, n, c, o]).
-go_over_automaton([t, h, a, l, i, n]).
-go_over_automaton([t, h, a, l, i, a, s]).
-go_over_automaton([t, h, a, l, i, a, n]).
-go_over_automaton([t, u, i, l, ë]).
-go_over_automaton([t, u, i, l, e]).
-go_over_automaton([t, h, a, l, e]).
+tengwa:-
+    write('tengwa'), nl,
+    write('Expected: true'), nl,
+    go_over_automaton([t, e, n, g, w, a]).
+
+tengwe:-
+    write('tengwe'), nl,
+    write('Expected: false'), nl,
+    go_over_automaton([t, e, n, g, w, e]).
+
+hello:-
+    write('hello'), nl,
+    write('Expected: false'), nl,
+    go_over_automaton([h, e, l, l, o]).
+
+tinco:-
+    write('tinco'), nl,
+    write('Expected: true'), nl,
+    go_over_automaton([t, i, n, c, o]).
+
+thalin:-
+    write('thalin'), nl,
+    write('Expected: true'), nl,
+    go_over_automaton([t, h, a, l, i, n]).
+
+thalias:-
+    write('thalias'), nl,
+    write('Expected: true'), nl,
+    go_over_automaton([t, h, a, l, i, a, s]).
+
+thalian:-
+    write('thalian'), nl,
+    write('Expected: false'), nl,
+    go_over_automaton([t, h, a, l, i, a, n]).
+
+tuilë:-
+    write('tuilë'), nl,
+    write('Expected: true'), nl,
+    go_over_automaton([t, u, i, l, ë]).
+
+tuile:-
+    write('tuile'), nl,
+    write('Expected: false'), nl,
+    go_over_automaton([t, u, i, l, e]).
+
+thale:-
+    write('thale'), nl,
+    write('Expected: false'), nl,
+    go_over_automaton([t, h, a, l, e]).
