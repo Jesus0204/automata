@@ -60,21 +60,21 @@ To run the program, first open ```elvish.pl``` in Prolog or a prolog terminal. T
 
 ### Successful tests
 Below are several tests which should return true, since they are the words that were defined in the automaton and the language:
-1. ```go_over_automaton([t, e, n, g, w, a]).```
-2. ```go_over_automaton([t, i, n, c, o]).```
-3. ```go_over_automaton([t, u, i, l, ë]).```
-4. ```go_over_automaton([t, h, a, l, i, a, s]).```
-5. ```go_over_automaton([t, h, a, l, i, n]).```
+1. ```tengwa.```
+2. ```tinco.```
+3. ```tuilë.```
+4. ```thalias.```
+5. ```thalin.```
 
 ### Unsuccessful tests
 Below are other words which are very similar to the words in the language, but which are not in the language. If the words are run, prolog will return false:
-1. ```go_over_automaton([t, e, n, g, w, e]).```
-2. ```go_over_automaton([h, e, l, l, o]).```
-3. ```go_over_automaton([t, h, a, l, i, a, n]).```
-4. ```go_over_automaton([t, u, i, l, e]).```
-5. ```go_over_automaton([t, h, a, l, e]).```
+1. ```tengwe.```
+2. ```hello.```
+3. ```thalian.```
+4. ```tuile.```
+5. ```thale.```
 
-The tests are also found in the file ```elvish.pl```.
+The tests themselves have the expected result and the result that Prolog gives. It is important to mention that these functions underneath have something similar to this command: ```go_over_automaton([t, e, n, g, w, a]).```. This means that if you want to run a word different from the above words, run ```go_over_automaton([word]).``` where **word** is the word put in letters, and each letter is separated with a comma. 
 
 ## Analysis
 Since the program uses recursion and iterates over the knowledge base (by checking each fact once) it assimilates a for a loop. The base case of the recursion is reached when the list in the program is empty, and no additional operation is performed, so it is safe to say that the program has an asymptotic time of O(n). Using a different approach would also have the same time. For example, if a NFA is used, the knowledge base would grow, but the recursion would remain the same, so there is no big difference in that aspect. 
