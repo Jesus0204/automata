@@ -83,7 +83,9 @@ To test the word **computer**, you need to run the following command:
  ```go_over_automaton([c, o, m, p, u, t, e, r]).```
 
 ## Analysis
-Since the program uses recursion and iterates over the knowledge base (by checking each fact once) it assimilates a for a loop. The base case of the recursion is reached when the list in the program is empty, and no additional operation is performed, so it is safe to say that the program has an asymptotic time of O(n). Using a different approach would also have the same time. For example, if a NFA is used, the knowledge base would grow, but the recursion would remain the same, so there is no big difference in that aspect. 
+
+### Time Complexity
+Since the program uses recursion and iterates over the knowledge base (by checking each fact once) it assimilates a for a loop. The base case of the recursion is reached when the list in the program is empty, and no additional operation is performed, so it is safe to say that the program has an asymptotic time of O(n). There is no nested "loop", and no matter how many facts are in the knowledge base, it will always iterate over each once, so in that aspect, it is safe to say that the solution to the program is efficient. 
 
 ## References
 Geeks for Geeks. (June 27, 2023). Introduction of Finite Automata. https://www.geeksforgeeks.org/introduction-of-finite-automata/
