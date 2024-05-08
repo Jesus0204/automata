@@ -25,7 +25,7 @@ Any other character not in the alphabet, and not explicitly in the automaton (wi
 Here is the automaton that I designed: 
 ![Automata Elvish](https://github.com/Jesus0204/automata/blob/main/Automata%20Elvish.png)
 
-The automaton is also equivalent to the following regular expression
+Now, another way to represent the automata is through a regular expression. Geeks for Geeks (2023) states that "A Regular Expression or RegEx is a special sequence of characters that uses a search pattern to find a string or set of strings.". Taking this into account, the automata that I made is also equivalent to the following regular expression:
 
 (^ $T)((hali (as|n))|(inco)|(engwa)|(uilë))$
 
@@ -89,6 +89,8 @@ Since the program uses recursion and iterates over the knowledge base (by checki
 
 ## References
 Geeks for Geeks. (June 27, 2023). Introduction of Finite Automata. https://www.geeksforgeeks.org/introduction-of-finite-automata/
+
+Geeks for Geeks. (November 30, 2023). Regular Expression (RegEx) in Python with Examples. https://www.geeksforgeeks.org/regular-expression-python-examples/
 
 LOTR Fandom. (n.d.). Elvish word list. https://lotr.fandom.com/wiki/Elvish_word_list
 
