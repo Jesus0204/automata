@@ -88,10 +88,11 @@ To test the word **computer**, you need to run the following command:
 Since the program uses recursion and iterates over the knowledge base (by checking each fact once) it assimilates a for a loop. The base case of the recursion is reached when the list in the program is empty, and no additional operation is performed, so it is safe to say that the program has an asymptotic time of O(n). There is no nested "loop", and no matter how many facts are in the knowledge base, it will always iterate over each once, so in that aspect, it is safe to say that the solution to the program is efficient. 
 
 ### Other solutions
-Before, I already explained why I chose the DFA instead of the NFA, and this was because of simplicity. Even though the NFA could be easier to implement when doing the automaton (considering the rules of the language), I would have to translate the NFA to a DFA so it could be programmed. Since the language is a simple one, using a DFA from the start is the smarter approach. 
 
- #### Different languages
+#### DFA or NFA?
+Before, I already explained why I chose the DFA instead of the NFA, and this was because of simplicity. Even though the NFA could be easier to implement when doing the automaton (considering the rules of the language), I would have to translate the NFA to a DFA so it could be programmed. Since the language of five words is a simple one, using a DFA from the start is the smarter approach. 
 
+ #### Different Programming languages
 As for other solutions, I researched a bit and asked Chat GTP how the same program could be done in C++, Python, and Javascript. Instead of using recursion, the three of them use a for loop, where the knowledge base is in an array/dictionary (depending on the language). The for loop iterates over the knowledge base, checking if the input is  a valid state, and if it is not (after checking all) it returns false. In a sense, it is very similar to what my Prolog program does, except that Prolog does it with recursion. This would mean that all the implementations have a time complexity of O(n). 
 
 The main difference is that the three create a class, and then an instance of the class (object) to represent the automaton. The following Javascript code was created by ChatGTP, where the function of the class checks the input to see if the word is valid in the language: 
