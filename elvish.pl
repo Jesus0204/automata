@@ -74,7 +74,7 @@ thalian:-
     write('Expected: false'), nl,
     go_over_automaton([t, h, a, l, i, a, n]).
 
-tuilë:-
+tuil3:-
     write('tuil3'), nl,
     write('Expected: true'), nl,
     go_over_automaton([t, u, i, l, 3]).
