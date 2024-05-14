@@ -64,7 +64,7 @@ To run the program, first open ```elvish.pl``` in Prolog or a prolog terminal. T
 Below are several tests which should return true, since they are the words that were defined in the automaton and the language:
 1. ```tengwa.```
 2. ```tinco.```
-3. ```tuilë.```
+3. ```tuil3.```
 4. ```thalias.```
 5. ```thalin.```
 
