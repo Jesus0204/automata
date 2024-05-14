@@ -19,7 +19,7 @@ move(m, n, c).
 move(n, z, o).
 move(o, p, i).
 move(p, q, l).
-move(q, z, ë).
+move(q, z, 3).
 
 % Accepting state
 accepting_state(z).
@@ -75,9 +75,9 @@ thalian:-
     go_over_automaton([t, h, a, l, i, a, n]).
 
 tuilë:-
-    write('tuilë'), nl,
+    write('tuil3'), nl,
     write('Expected: true'), nl,
-    go_over_automaton([t, u, i, l, ë]).
+    go_over_automaton([t, u, i, l, 3]).
 
 tuile:-
     write('tuile'), nl,
