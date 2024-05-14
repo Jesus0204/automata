@@ -55,7 +55,7 @@ and the recursive rule:
 automatonCheck([Symbol | RestofList], InitialState) :-
 ```
 
-All of these rules and the knowledge base are found in the file ```elvish.pl```. If the word is in the language it returns true otherwise, it returns false.
+All of these rules and the knowledge base are found in the file ```elvish.pl```. If the word is in the language it returns true otherwise, it returns false. It is important to mention that the character ë is not an accepted ASCII character, so in the program, I changed it with a 3. This is so the program compiles.
 
 ## Test
 To run the program, first open ```elvish.pl``` in Prolog or a prolog terminal. To open the file, you must run ["route to the file/elvish.pl"].
